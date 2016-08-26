@@ -1,0 +1,266 @@
+/*
+========================================
+Reset
+========================================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+========================================
+Grid 
+========================================
+*/
+
+.container {
+	max-width: 960px; 
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: 80px auto 0 auto;
+}
+
+.row:before, 
+.row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.row:before {
+	clear: both;
+	*zoom: 1;
+}
+
+.col-* {
+	float: left;
+	position: relative;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+/*
+========================================
+Custom
+========================================
+*/
+
+body {
+	background: #6c5353;
+}
+
+
+
+/*
+========================================
+Header, Navbar 
+========================================
+*/
+
+header {
+	color: #241c1c;
+	margin-bottom: 20px;
+}
+
+.navbar {
+	background: #e9c6af;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.navbar li {
+	display: inline-block;
+	width: 16%;
+	margin-right: 19.5%;
+	padding: 10px 15px;
+	color: #483737;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.navbar li:last-child {
+	margin-right: 0;
+}
+
+.active {
+	background: #483737;
+	color: #ac9393;
+}
+
+
+/*
+========================================
+hero
+========================================
+*/
+
+.hero {
+	background: #c8b7b7;
+	color: #241c1c;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	height: 339.5px;
+	position: relative;
+}
+
+/*Home*/
+
+.hero_img {
+	background: url('../img/hero.jpg') no-repeat;
+	background-size: cover;
+	height: 100%;
+	float: right;
+}
+
+
+
+.hero_top-panel, 
+.hero_bottom-panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero_top-panel {
+	background: #dc3955; 
+	color: #483737;
+	height: 40%;
+}
+
+.hero_bottom-panel {
+	background: #483e37;
+	color: #c8b7b7;
+	height: 60%;
+}
+
+/*Menu*/
+
+.hero_img--menu {
+	background: url('../img/hero.jpg') no-repeat;
+	background-size: 100% 100%;
+	-webkit-filter: opacity(0.2);
+			filter: opacity(0.2);
+	height: 100%;
+}
+
+.hero_list {
+	color: #241c1c;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-top: 50px;
+	padding-left: 30px;
+}
+
+.hero_list ul {
+	list-style: square inside;
+}
+
+.hero_list li {
+	margin-bottom: 10px;
+
+}
+
+.hidden {
+	display: none;
+}
+
+
+/*
+========================================
+Typography
+========================================
+*/
+
+body {
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 500; 
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+h1 {
+	font-size: 6em;
+}
+
+h3 {
+	font-size: 1.4em;
+	font-weight: 400,
+}
+
+.navbar {
+	font-size: 1em;
+}
+
+.hero_top-panel {
+	font-size: 1.1em;
+	text-transform: uppercase;
+}
+
+.hero_bottom-panel {
+	font-size: 5em;
+	font-weight: 900;
+}
+
+.hero_list {
+	font-size: 1.2em;
+}
