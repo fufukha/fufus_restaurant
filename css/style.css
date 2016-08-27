@@ -91,7 +91,7 @@ Grid
 }
 
 .col-8 {
-	width: 66.66%;
+	width: 66.67%;
 }
 
 .col-4 {
@@ -127,7 +127,7 @@ header {
 	padding-right: 20px;
 }
 
-.navbar li {
+.navbar_tab {
 	display: inline-block;
 	width: 16%;
 	margin-right: 19.5%;
@@ -137,8 +137,14 @@ header {
 	text-align: center;
 }
 
-.navbar li:last-child {
+.navbar_tab:last-child {
 	margin-right: 0;
+}
+
+.navbar_tab:hover {
+	font-weight: 700;
+	font-size: 1.07em;
+	cursor: pointer;
 }
 
 .active {
@@ -178,6 +184,7 @@ hero
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .hero_top-panel {
@@ -189,12 +196,12 @@ hero
 .hero_bottom-panel {
 	background: #483e37;
 	color: #c8b7b7;
-	height: 60%;
+	height: 60.01%;
 }
 
 /*Menu*/
 
-.hero_img--menu {
+.hero_img--ext {
 	background: url('../img/hero.jpg') no-repeat;
 	background-size: 100% 100%;
 	-webkit-filter: opacity(0.2);
@@ -220,10 +227,34 @@ hero
 
 }
 
+dd {
+	margin: 5px 0 5px 40px;
+}
+
 .hidden {
 	display: none;
 }
 
+
+/*
+========================================
+Links
+========================================
+*/
+
+a:link, 
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	font-weight: 700;
+}
+
+a:active {
+	color: inherit;
+}
 
 /*
 ========================================
@@ -262,5 +293,7 @@ h3 {
 }
 
 .hero_list {
+	text-transform: none;
 	font-size: 1.2em;
 }
+
